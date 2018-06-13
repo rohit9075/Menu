@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="help">Help</string>
+    <string name="file">file</string>
+    <string name="create_new">create new</string>
+    <string name="open">open</string>
+</resources>
