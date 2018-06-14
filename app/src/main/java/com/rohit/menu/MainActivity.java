@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         }
     }
 
+    // Handling the button click
+    // On button click showing the popup menu
     public void showPopup(View v) {
         PopupMenu popup = new PopupMenu(this, v);
         MenuInflater inflater = popup.getMenuInflater();
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         popup.show();
     }
 
-
+// Handling the popup menu item clicks
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
