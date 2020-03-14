@@ -44,30 +44,4 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-    // Handling the button click
-    // On button click showing the popup menu
-//    public void showPopup(View v) {
-//        PopupMenu popup = new PopupMenu(this, v);
-//        MenuInflater inflater = popup.getMenuInflater();
-//        // This activity implements OnMenuItemClickListener
-//        popup.setOnMenuItemClickListener(this);
-//        inflater.inflate(R.menu.actions, popup.getMenu());
-//        popup.show();
-//    }
-//
-//// Handling the popup menu item clicks
-//    @Override
-//    public boolean onMenuItemClick(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.new_game:
-//                Toast.makeText(this, "new Game", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.help:
-//                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
-//                return true;
-//            default:
-//                return false;
-//        }
-//    }
 }
