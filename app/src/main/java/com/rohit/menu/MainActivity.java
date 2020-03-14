@@ -16,36 +16,37 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportFragmentManager().beginTransaction().add(R.id.container, new BlankFragment(), "frag").commit();
+        // Fragment call
+       // getSupportFragmentManager().beginTransaction().add(R.id.container, new BlankFragment(), "frag").commit();
 
 
     }
 
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//// Handle item selection
-//        switch (item.getItemId()) {
-//            case R.id.new_game:
-//                Toast.makeText(this, "new Game", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.help:
-//                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
-//
-//    // Handling the button click
-//    // On button click showing the popup menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+// Handle item selection
+        switch (item.getItemId()) {
+            case R.id.new_game:
+                Toast.makeText(this, "new Game", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.help:
+                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    // Handling the button click
+    // On button click showing the popup menu
 //    public void showPopup(View v) {
 //        PopupMenu popup = new PopupMenu(this, v);
 //        MenuInflater inflater = popup.getMenuInflater();
